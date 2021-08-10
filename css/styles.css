@@ -132,7 +132,8 @@ body {
   color: #212121;
   cursor: pointer;
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   color: #ffffff;
   background-color: var(--secondary-text-color);
 }
