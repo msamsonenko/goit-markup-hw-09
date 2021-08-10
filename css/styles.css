@@ -1,0 +1,148 @@
+/* variables */
+:root {
+  /* bg color */
+  --header-bg-color: #ffffff;
+  --hero-footer-bg-color: #2f303a;
+  --qualities-work-bg-color: #e5e5e5;
+  --team-bg-color: #f5f4fa;
+  /* text color*/
+  --primary-text-color: #757575;
+  --secondary-text-color: #2196f3;
+  --title-text-color: #212121;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* global classes */
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+  color: var(--secondary-text-color);
+}
+.list {
+  list-style: none;
+}
+.title {
+  font-weight: 700;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+}
+
+/* site header (logo, nav, contacts) */
+/* header logo */
+.logo {
+  color: #212121;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo > span {
+  color: var(--secondary-text-color);
+}
+/* header nav*/
+.nav-link {
+  color: var(--title-text-color);
+}
+/* header contacts */
+.hd-contacts {
+  color: var(--primary-text-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-footer-bg-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--header-bg-color);
+  background-color: var(--secondary-text-color);
+  cursor: pointer;
+}
+/* qualities section */
+.quality-subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* work section and team section*/
+.work-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+.team-roles {
+  font-size: 16px;
+  line-height: 1.18;
+}
+/* footer */
+.ft-container {
+  background-color: var(--hero-footer-bg-color);
+}
+.ft-logo {
+  color: #ffffff;
+}
+.map-coords {
+  color: #ffffff;
+  font-style: normal;
+}
+.ft-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+/* ///////////////////////////////////////// */
+/* PORTFOLIO */
+.filter-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  color: #ffffff;
+  background-color: var(--secondary-text-color);
+}
+/* cards */
+.card-subtitle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-description {
+  font-size: 16px;
+  line-height: 1.87;
+}
