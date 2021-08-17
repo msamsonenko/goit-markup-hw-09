@@ -19,7 +19,25 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* global classes */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -41,8 +59,21 @@ body {
 }
 
 /* site header (logo, nav, contacts) */
+.container {
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 1px solid red; */
+}
+.page-header {
+  display: flex;
+}
 /* header logo */
 .logo {
+  margin-right: 97px;
   color: #212121;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -53,20 +84,43 @@ body {
 .logo > span {
   color: var(--secondary-text-color);
 }
+/* main-nav */
+.main-nav {
+  display: flex;
+}
+
+.main-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 /* header nav*/
 .nav-link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   color: var(--title-text-color);
 }
 /* header contacts */
 .hd-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.hd-contacts .item {
   color: var(--primary-text-color);
+}
+.hd-contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* hero */
 .hero {
   background-color: var(--hero-footer-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -83,34 +137,71 @@ body {
   cursor: pointer;
 }
 /* qualities section */
+.ql-list {
+  display: flex;
+}
+.ql-list .item {
+  width: 270px;
+}
+.ql-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .quality-subtitle {
   font-size: 14px;
   line-height: 1.14;
 }
 /* work section and team section*/
+.work-list {
+  display: flex;
+}
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .work-title,
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
+.team-list {
+  display: flex;
+}
+.team-list .item {
+  text-align: center;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-subtitle {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--title-text-color);
 }
 .team-roles {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.18;
 }
 /* footer */
 .ft-container {
   background-color: var(--hero-footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .ft-logo {
+  display: inline-block;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+.ft-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .map-coords {
   color: #ffffff;
