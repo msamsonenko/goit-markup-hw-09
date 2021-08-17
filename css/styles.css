@@ -108,6 +108,9 @@ ul {
 
 .hd-contacts .item {
   color: var(--primary-text-color);
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .hd-contacts .item:not(:last-child) {
   margin-right: 50px;
