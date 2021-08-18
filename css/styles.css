@@ -33,6 +33,12 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* global classes */
@@ -43,11 +49,12 @@ ul {
 .container {
   align-items: center;
   width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 .link {
   text-decoration: none;
@@ -60,16 +67,11 @@ ul {
 .link:focus {
   color: var(--secondary-text-color);
 }
-.list {
-  list-style: none;
-}
+
 .title {
   font-weight: 700;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
-}
-.image {
-  display: block;
 }
 
 /* site header (logo, nav, contacts) */
@@ -258,11 +260,14 @@ ul {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .cards-list > .item {
   /* outline: 1px solid green; */
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 .cards-list > .item:nth-child(3n) {
   margin-right: 0;
@@ -271,22 +276,16 @@ ul {
   margin-bottom: 0;
 }
 .img-description {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 .card-subtitle {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .card-description {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 4px;
+  margin-top: 4px;
 
   font-size: 16px;
   line-height: 1.87;
