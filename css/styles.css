@@ -105,8 +105,8 @@ img {
 /* header nav*/
 .nav-link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
 }
@@ -132,6 +132,9 @@ img {
 
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--hero-footer-bg-color);
   text-align: center;
 }
@@ -146,11 +149,15 @@ img {
   color: #ffffff;
 }
 .hero-btn {
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   color: var(--header-bg-color);
   background-color: var(--secondary-text-color);
+
+  border-radius: 4px;
   cursor: pointer;
 }
 /* qualities section */
@@ -164,6 +171,8 @@ img {
   margin-right: 30px;
 }
 .quality-subtitle {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
 }
@@ -192,9 +201,10 @@ img {
   margin-right: 30px;
 }
 
+.team-text{
+  padding: 30px 59px;
+}
 .team-subtitle {
-  margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -238,15 +248,18 @@ img {
   margin-bottom: 50px;
 }
 .filter-list > .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 .filter-btn {
+  padding: 6px 22px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   color: #212121;
+
   cursor: pointer;
   border-color: transparent;
   border-radius: 3px;
