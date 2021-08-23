@@ -177,6 +177,9 @@ img {
   line-height: 1.14;
 }
 /* work section and team section*/
+.work-section{
+  padding-top: 0;
+}
 .work-list {
   display: flex;
 }
