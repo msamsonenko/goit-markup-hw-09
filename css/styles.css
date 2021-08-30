@@ -193,11 +193,7 @@ img {
 .ql-list > .item:not(:last-child) {
   margin-right: 30px;
 }
-.ql-list .icon {
-  width: 70px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .quality-subtitle {
   margin-bottom: 10px;
 
@@ -206,6 +202,8 @@ img {
 }
 .icon-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -247,7 +245,7 @@ img {
 }
 
 .team-text {
-  padding: 30px 59px;
+  padding: 30px 15px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -264,9 +262,7 @@ img {
 .social-networks {
   display: flex;
   justify-content: space-around;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
+  margin-top: 16px;
 
   /* outline: 1px solid red; */
 }
@@ -388,6 +384,7 @@ img {
 } */
 .ft-text {
   color: #ffffff;
+  font-weight: 700;
 }
 .socials {
   display: flex;
