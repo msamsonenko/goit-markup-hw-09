@@ -14,9 +14,12 @@
   --icon-secondary-color: #2196f3;
   /* thumb color */
   --thumb-color: #2196f3;
+  --thumb-color-alternate: #2f303a;
   /* animation */
   --animation-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  /* nav links */
+  --link-underline: #2196f3;
 }
 
 body {
@@ -117,11 +120,26 @@ img {
 }
 /* header nav*/
 .nav-link {
+  position: relative;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--title-text-color);
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--link-underline);
+  border-radius: 2px;
 }
 /* header contacts */
 .hd-contacts {
@@ -234,7 +252,10 @@ img {
 .work-list {
   display: flex;
 }
-.work-list > .item:not(:last-child) {
+/* .work-item{
+  position: relative;
+} */
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 .work-title,
@@ -243,6 +264,27 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.work-thumb{
+  position: relative;
+}
+.work-thumb::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--thumb-color-alternate);
+  opacity: 0.8;
+}
+.work-thumb>.text{
+  position: absolute;
+  left: 83px;
+    bottom: 27px;
+
+    color: #ffffff;
 }
 
 .team-list {
@@ -425,7 +467,14 @@ img {
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.2);;
-  
+  transition: opacity var(--animation-duration) var(--cubic-bezier), 
+  visibility var(--animation-duration) var(--cubic-bezier);
+}
+
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -440,14 +489,16 @@ img {
   border-radius: 5px;
 }
 .btn-close {
-  width: 40px;
-  height: 40px;
-  border: 2px solid red;
-  background-color: unset;
-  border-radius: 50%;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: unset;
 }
 /* ///////////////////////////////////////// */
 /* PORTFOLIO */
