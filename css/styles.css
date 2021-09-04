@@ -20,6 +20,8 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   /* nav links */
   --link-underline: #2196f3;
+  /* button */
+  --button-color: #2196f3;
 }
 
 body {
@@ -460,6 +462,35 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.form-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  color: #ffffff;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.form-input {
+  width: 358px;
+  margin-right: 12px;
+  padding: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.form-button {
+  /* display: flex;
+  justify-content: center; */
+  margin-right: 10px;
+  padding: 10px 29px;
+  background-color: var(--button-color);
+  color: #ffffff;
+}
+.form-button > .icon {
+  fill: #ffffff;
 }
 
 /* backdrop */
