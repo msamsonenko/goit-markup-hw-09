@@ -128,8 +128,8 @@ img {
 
   color: var(--title-text-color);
 }
-.nav-link::after{
-  content: "";
+.nav-link.current::after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -266,10 +266,10 @@ img {
   text-align: center;
 }
 
-.work-thumb{
+.work-thumb {
   position: relative;
 }
-.work-thumb::before{
+.work-thumb::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -279,12 +279,14 @@ img {
   background-color: var(--thumb-color-alternate);
   opacity: 0.8;
 }
-.work-thumb>.text{
+.work-thumb > .text {
   position: absolute;
   left: 83px;
-    bottom: 27px;
+  bottom: 27px;
 
-    color: #ffffff;
+  font-weight: 700;
+
+  color: #ffffff;
 }
 
 .team-list {
@@ -351,10 +353,11 @@ img {
     background-color var(--animation-duration) var(--cubic-bezier);
 }
 .social-networks .link:hover,
-.social-networks .link:focus,
+.social-networks .link:focus {
+  background-color: var(--secondary-text-color);
+}
 .social-networks .link:hover .icon,
 .social-networks .link:focus .icon {
-  background-color: var(--secondary-text-color);
   fill: var(--team-bg-color);
 }
 /* client section */
@@ -466,12 +469,12 @@ img {
   width: 100vw;
   height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.2);;
-  transition: opacity var(--animation-duration) var(--cubic-bezier), 
-  visibility var(--animation-duration) var(--cubic-bezier);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--animation-duration) var(--cubic-bezier),
+    visibility var(--animation-duration) var(--cubic-bezier);
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
