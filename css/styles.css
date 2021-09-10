@@ -485,6 +485,7 @@ img {
 
   background-color: var(--hero-footer-bg-color);
   color: #ffffff;
+  outline: none;
 }
 .form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -622,16 +623,23 @@ img {
   align-items: center;
   margin-bottom: 30px;
 }
-.modal-terms::after {
-  content: '';
-  display: inline-block;
+.terms-input {
+  /* margin-right: 9px; */
+  -webkit-appearance: none;
+}
+.modal-checkbox{
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-color: aqua;
+  border: 2px solid #212121;
+  
 }
-.terms-input {
-  margin-right: 9px;
-  -webkit-appearance: none;
+.terms-input:checked + .modal-checkbox{
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-origin: border-box;
 }
 .modal-link {
   margin-left: 5px;
