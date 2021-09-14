@@ -95,10 +95,10 @@ img {
 }
 
 /* site header (logo, nav, contacts) */
-.page-header {
+.page-hd {
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.page-hd__container {
   display: flex;
 }
 /* header logo */
@@ -111,19 +111,19 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo > span {
+.logo__span {
   color: var(--secondary-text-color);
 }
 /* main-nav */
-.main-nav {
+.hd-nav {
   display: flex;
 }
 
-.main-nav > .item:not(:last-child) {
+.hd-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 /* header nav*/
-.nav-link {
+.hd-nav__link {
   position: relative;
 
   display: block;
@@ -132,7 +132,7 @@ img {
 
   color: var(--title-text-color);
 }
-.nav-link.current::after {
+.hd-nav__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -152,7 +152,7 @@ img {
   align-items: center;
 }
 
-.hd-contacts .item {
+.hd-contacts__link {
   color: var(--primary-text-color);
   display: inline-flex;
   align-items: center;
@@ -162,19 +162,19 @@ img {
   transition: color var(--animation-duration) var(--cubic-bezier),
     fill var(--animation-duration) var(--cubic-bezier);
 }
-.hd-contacts .item:not(:last-child) {
+.hd-contacts__link:not(:last-child) {
   margin-right: 30px;
 }
-.hd-contacts .icon {
+.hd-contacts__icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 
   transition: fill var(--animation-duration) var(--cubic-bezier);
 }
-.hd-contacts .item:hover,
-.hd-contacts .item:focus,
-.hd-contacts .item:hover .icon,
-.hd-contacts .item:focus .icon {
+.hd-contacts__link:hover,
+.hd-contacts__link:focus,
+.hd-contacts__link:hover .hd-contacts__icon,
+.hd-contacts__link:focus .hd-contacts__icon {
   color: var(--secondary-text-color);
   fill: var(--icon-secondary-color);
 }
@@ -627,16 +627,15 @@ img {
   /* margin-right: 9px; */
   -webkit-appearance: none;
 }
-.modal-checkbox{
+.modal-checkbox {
   display: flex;
   align-items: center;
   margin-right: 7px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  
 }
-.terms-input:checked + .modal-checkbox{
+.terms-input:checked + .modal-checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
   background-origin: border-box;
