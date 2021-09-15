@@ -1,0 +1,40 @@
+/* header contacts */
+.hd-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+.hd-contacts__link {
+    color: $primary-text-color;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  
+    transition: color $animation-duration $cubic-bezier,
+      fill $animation-duration $cubic-bezier;
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+    &:hover,
+    &:focus{
+        color: $secondary-text-color;
+    }
+  }
+  
+.hd-contacts__icon {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+  
+    transition: fill $animation-duration $cubic-bezier;
+
+    .hd-contacts__link:hover &,
+    .hd-contacts__link:focus & {
+
+    fill: $icon-secondary-color;
+
+    }
+  }
+  
+  

@@ -1,0 +1,33 @@
+/* qualities section */
+.qualities {
+    display: flex;
+    
+    &__item {
+        width: 270px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+  }
+  
+  .qualities__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+  .qualities__icon {
+    fill: $title-text-color;
+  }
+  
+  .qualities__subtitle {
+    margin-bottom: 10px;
+  
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  
