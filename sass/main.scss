@@ -1,15 +1,30 @@
 @import './base/variables';
 @import './base/normalize';
 @import './base/reset';
+@import './utils/placeholders';
 @import './utils/global';
+// HEADER
 @import './layout/header/header';
 @import './layout/header/logo';
 @import './layout/header/header-nav';
 @import './layout/header/hd-contacts';
+// STUDIO PAGE
 @import './pages/studio/hero';
 @import './pages/studio/qualities';
 @import './pages/studio/work';
 @import './pages/studio/team';
 @import './pages/studio/team-socials';
 @import './pages/studio/clients';
-
+// PORTFOLIO PAGE
+@import './pages/portfolio/filter';
+@import './pages/portfolio/cards';
+// FOOTER
+@import './layout/footer/footer';
+@import './layout/footer/footer-address';
+@import './layout/footer/footer-socials';
+@import './layout/footer/footer-form';
+// MODAL FORM
+@import './layout/backdrop/backdrop';
+@import './layout/backdrop/modal';
+@import './layout/backdrop/modal-form';
+@import './layout/backdrop/modal-terms';

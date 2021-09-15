@@ -1,0 +1,20 @@
+%link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $animation-duration $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+  }
+}
+
+%title {
+  font-weight: 700;
+  color: $title-text-color;
+  letter-spacing: 0.03em;
+}

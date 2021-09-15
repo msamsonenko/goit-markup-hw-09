@@ -429,6 +429,7 @@ img {
 .footer__span {
   color: var(--secondary-text-color);
 }
+/* footer address */
 .ft-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -441,6 +442,7 @@ img {
   font-style: normal;
   font-weight: 400;
 }
+/* footer socials */
 
 .footer-socials {
   display: flex;
@@ -476,7 +478,7 @@ img {
   color: #ffffff;
   font-weight: 700;
 }
-
+/* footer form */
 .footer-form__text {
   margin-bottom: 20px;
 
