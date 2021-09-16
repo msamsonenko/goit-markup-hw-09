@@ -1,0 +1,26 @@
+.modal-terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal-terms__input {
+  -webkit-appearance: none;
+}
+.modal-terms__checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+}
+.modal-terms__input:checked + .modal-terms__checkbox {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-origin: border-box;
+}
+.modal-terms__link {
+  margin-left: 5px;
+  color: $secondary-text-color;
+}

@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  padding: 40px;
+  transition: fill $animation-duration $cubic-bezier;
+}
+.modal__icon:hover {
+  fill: $icon-secondary-color;
+}
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: unset;
+}
