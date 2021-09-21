@@ -8,6 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $animation-duration $cubic-bezier,
     visibility $animation-duration $cubic-bezier;
+
+  overflow-y: scroll;
 }
 
 .is-hidden {

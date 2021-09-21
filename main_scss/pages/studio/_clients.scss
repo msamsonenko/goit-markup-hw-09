@@ -1,0 +1,40 @@
+/* client section */
+.client__title {
+  @extend %title;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.client__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__icon {
+  fill: $icon-primary-color;
+  transition: fill $animation-duration $cubic-bezier;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border $animation-duration $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $secondary-text-color;
+    border-radius: 4px;
+  }
+
+  &:hover .client__icon,
+  &:focus .client__icon {
+    fill: $secondary-text-color;
+  }
+}

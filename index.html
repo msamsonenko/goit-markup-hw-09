@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
@@ -19,8 +18,92 @@
     <header class="page-hd">
       <!--main website navigation-->
       <div class="container page-hd__container">
+
         <!--logo-->
-        <a href="" class="logo"> <span class="logo__span">Web</span>Studio</a>
+
+        <div class="mobile">
+          <a href="" class="logo"> <span class="logo__span">Web</span>Studio</a>
+          <button class="mobile-btn js-open-menu">
+            <svg 
+             width="24" 
+              height="16"
+             aria-label="Переключатель мобильного меню"
+             aria-expanded="true"
+             aria-controls="mobile-menu"
+            >
+              <use class="mobile-btn__open" href="./images/icons.svg#icon-mobile-menu"></use>
+            
+            </svg>
+          </button>
+          <div class="mobile-container js-menu-container " id="mobile-menu">
+            <button class="mobile-btn__close js-close-menu">
+              <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+              
+                <use class="" href="./images/icons.svg#icon-close-mobile"></use>
+              </svg>
+            </button>
+            <ul class="mobile-pages">
+
+              <li class="mobile-pages__item">
+                <a href="" class="mobile-pages__link">Студия</a>
+              </li>
+
+              <li class="mobile-pages__item">
+               <a href="" class="mobile-pages__link">Портфолио</a>
+              </li>
+
+              <li class="mobile-pages__item">
+                <a href="" class="mobile-pages__link">Контакты</a>
+              </li>
+
+            </ul>
+            <div class="mobile-contacts">
+
+              <a href="tel:+380961111111" class="mobile-contacts__link">
+              
+                +38 096 111 11 11
+              </a>
+          
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                
+                info@devstudio.com
+              </a>
+        
+          
+            </div>
+            <div class="mobile-socials">
+              <ul class="mobile-socials__list">
+
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">
+                    Instagram
+                  </a>
+                </li>
+
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">
+                    Twitter
+                  </a>
+                </li>
+
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">
+                    Facebook
+                  </a>
+                </li>
+
+                <li class="mobile-socials__item">
+                  <a href="" class="mobile-socials__link">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+
+        </div>
+        <div class="nav-contacts">
         <nav>
           <ul class="hd-nav">
             <li class="hd-nav__item">
@@ -39,7 +122,6 @@
         <!--header contacts-->
         <div class="hd-contacts">
           
-            
             <a href="mailto:info@devstudio.com" class="hd-contacts__link">
               <svg class="hd-contacts__icon" width="20" height="16">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -47,8 +129,6 @@
               info@devstudio.com
             </a>
           
-          
-            
             <a href="tel:+380961111111" class="hd-contacts__link">
               <svg class="hd-contacts__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-telephone"></use>
@@ -56,6 +136,7 @@
               +38 096 111 11 11
             </a>
         
+        </div>
         </div>
       </div>
     </header>
@@ -79,7 +160,7 @@
                 </svg>
               </div>
               <h3 class="qualities__subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <p class="qualities__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="qualities__item">
               <div class="qualities__container">
@@ -88,7 +169,7 @@
                 </svg>
               </div>
               <h3 class="qualities__subtitle">ПУНКТУАЛЬНОСТЬ</h3>
-              <p>
+              <p class="qualities__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
@@ -99,7 +180,7 @@
                 </svg>
               </div>
               <h3 class="qualities__subtitle">ПЛАНИРОВАНИЕ</h3>
-              <p>
+              <p class="qualities__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
@@ -110,7 +191,7 @@
                 </svg>
               </div>
               <h3 class="qualities__subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="qualities__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -158,7 +239,7 @@
         <ul class="team__list">
       
           <li class="team__item">
-            <img src="./images/Ihor-Demianenko.jpg" alt="Ihor Demianenko" class="team__image" width="270" height="260" />
+            <img src="./images/Ihor-Demianenko.jpg" alt="Ihor Demianenko" class="team__image"/>
             <div class="team__text">
               <h3 class="team__subtitle">Игорь Демьяненко</h3>
               <p class="team__roles">Product Designer</p>
@@ -202,7 +283,7 @@
           </li>
       
           <li class="team__item">
-            <img src="./images/Olha-Repina.jpg" alt="Olha Repina" width="270" height="260" />
+            <img src="./images/Olha-Repina.jpg" class="team__image" alt="Olha Repina"  />
             <div class="team__text">
               <h3 class="team__subtitle">Ольга Репина</h3>
               <p class="team__roles">Frontend Developer</p>
@@ -244,7 +325,7 @@
           </li>
       
           <li class="team__item">
-            <img src="./images/Nikolay-Tarasov.jpg" alt="Nikolay Tarasov" width="270" height="260" />
+            <img src="./images/Nikolay-Tarasov.jpg"class="team__image" alt="Nikolay Tarasov"/>
             <div class="team__text">
               <h3 class="team__subtitle">Николай Тарасов</h3>
               <p class="team__roles">Marketing</p>
@@ -286,7 +367,7 @@
           </li>
       
           <li class="team__item">
-            <img src="./images/Mikhail-Ermakov.jpg" alt="Mikhail Ermakov" width="270" height="260" />
+            <img src="./images/Mikhail-Ermakov.jpg" class="team__image" alt="Mikhail Ermakov" />
             <div class="team__text">
               <h3 class="team__subtitle">Михаил Ермаков</h3>
               <p class="team__roles">UI Designer</p>
@@ -530,6 +611,6 @@
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

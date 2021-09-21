@@ -1,27 +1,19 @@
+/* footer */
 .footer {
   background-color: $hero-footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer__container {
-  //   display: flex;
+  display: flex;
   align-items: baseline;
 }
-.footer__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-bottom: 60px;
+.footer__item:not(:last-child) {
+  margin-right: 70px;
 }
-// .footer__item:not(:last-child) {
-//   margin-right: 70px;
-// }
 .footer__logo {
   display: inline-block;
   color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
 }
 .footer__span {

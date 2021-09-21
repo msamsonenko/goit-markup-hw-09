@@ -1,8 +1,5 @@
-/* team section */
-
 .team {
   background-color: #f5f4fa;
-
   &__title {
     @extend %title;
     margin-bottom: 50px;
@@ -11,9 +8,11 @@
     text-align: center;
   }
 }
+// /* team section */
 
 .team__list {
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team__item {
@@ -25,8 +24,12 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
+}
+.team__image {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team__text {

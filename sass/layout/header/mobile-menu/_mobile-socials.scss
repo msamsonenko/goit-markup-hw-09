@@ -1,0 +1,25 @@
+.mobile-socials__list {
+  display: flex;
+}
+
+.mobile-socials__link {
+  @extend %link;
+  position: relative;
+
+  font-size: 18px;
+  color: $link-underline;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    right: -10px;
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+.mobile-socials__item:not(:last-child) {
+  margin-right: 20px;
+}

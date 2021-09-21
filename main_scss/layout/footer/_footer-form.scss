@@ -1,10 +1,6 @@
 /* footer form */
-.footer-form {
-  width: 100%;
-}
 .footer-form__text {
   margin-bottom: 20px;
-  text-align: center;
 
   font-weight: 700;
   color: #ffffff;
@@ -12,12 +8,10 @@
 .footer-form__container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .footer-form__input {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 358px;
+  margin-right: 12px;
   padding: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -33,14 +27,13 @@
 }
 
 .footer-form__button {
-  @extend %button;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   margin-right: 10px;
+  margin-right: 10px;
   padding: 10px 29px;
 
-  //   background-color: $button-color;
+  background-color: $button-color;
   color: #ffffff;
 
   border-radius: 4px;

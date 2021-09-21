@@ -1,0 +1,24 @@
+/* footer address */
+// .ft-address {
+//   margin-bottom: 60px;
+// }
+.ft-address__item {
+  text-align: center;
+}
+.ft-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.ft-address__map {
+  @extend %link;
+  color: #ffffff;
+  font-style: normal;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.ft-address__link {
+  @extend %link;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+}

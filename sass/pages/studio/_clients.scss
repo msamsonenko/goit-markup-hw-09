@@ -8,7 +8,16 @@
 }
 .client__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.client__item {
+  display: inline-block;
+  margin: 15px;
+
+  width: calc((100% - 4 * 15px) / 2);
 }
 
 .client__icon {
@@ -20,7 +29,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
