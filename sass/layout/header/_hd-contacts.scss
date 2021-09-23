@@ -2,7 +2,12 @@
 .hd-contacts {
   display: flex;
   margin-left: auto;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px){
+    flex-direction: row;
+  }
 }
 
 .hd-contacts__link {
@@ -10,17 +15,28 @@
   color: $primary-text-color;
   display: inline-flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  
 
   transition: color $animation-duration $cubic-bezier, fill $animation-duration $cubic-bezier;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+ 
   &:hover,
   &:focus {
     color: $secondary-text-color;
   }
+  @media screen and (max-width: 1199px){
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+
 }
 
 .hd-contacts__icon {

@@ -1,9 +1,14 @@
-// HEADER
+// HEADER (mobile)
 @import './header/logo';
 @import './header/mobile-menu/mobile-menu';
 @import './header/mobile-menu/mobile-pages';
 @import './header/mobile-menu/mobile-socials';
 @import './header/mobile-menu/mobile-contacts';
+
+// HEADER (tablet & desktop)
+// @import './header/header';
+@import './header/header-nav';
+@import './header/hd-contacts';
 
 // FOOTER
 @import './footer/footer';

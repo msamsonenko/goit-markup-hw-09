@@ -1,21 +1,22 @@
-// .qualities {
-//   display: flex;
+.qualities {
+  display: flex;
+  margin: -15px;
 
-//   &__item {
-//     width: 270px;
-//   }
+  // &__item {
+  //   width: 270px;
+  // }
 
-//   &__item:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
 
 .qualities__item {
   margin-left: auto;
   margin-right: auto;
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
 }
 .qualities__container {
   display: flex;

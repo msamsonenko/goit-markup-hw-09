@@ -1,6 +1,7 @@
 .logo {
-  // padding-top: 16px;
-  // padding-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 88px;
 
   color: #212121;
   text-decoration: none;
@@ -10,5 +11,9 @@
   line-height: 1.2;
   &__span {
     color: $secondary-text-color;
+  }
+
+  @media screen and(min-width: 1200px){
+    margin-right: 93px;
   }
 }
