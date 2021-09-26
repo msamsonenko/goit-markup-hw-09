@@ -205,7 +205,22 @@
 
             <li class="work__item">
               <div class="work__thumb">
-                <img src="./images/coding.jpg" alt="coding"  width="370" height="294" />
+                <picture>
+
+                  <source
+                    srcset="./images/studio-page/work/desktop-app-x1.jpg 1x,
+                    ./images/studio-page/work/desktop-app-x2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  >
+
+                  <img 
+                    src="./images/studio-page/work/desktop-app-x1.jpg" 
+                    alt="coding" 
+                    width="370" 
+                    height="294" 
+                  />
+                </picture>
+
                 <p class="work__text">
                   ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
                 </p>
@@ -214,7 +229,20 @@
 
             <li class="work__item">
               <div class="work__thumb">
-                <img src="./images/adaptive-coding.jpg" alt="adaptive coding"  width="370" height="294" />
+                <picture>
+
+                  <source srcset="./images/studio-page/work/mobile-app-x1.jpg 1x,
+                  ./images/studio-page/work/mobile-app-x2.jpg 2x"
+                  >
+
+                  <img 
+                    src="./images/studio-page/work/mobile-app-x1.jpg" 
+                    alt="adaptive coding" 
+                    width="370" 
+                    height="294" 
+                  
+                  />
+                </picture>
                 <p class="work__text">
                   МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
                 </p>
@@ -223,7 +251,18 @@
 
             <li class="work__item">
               <div class="work__thumb">
-                <img src="./images/design.jpg" alt="design" width="370" height="294" />
+                <picture>
+
+                  <source srcset="./images/studio-page/work/designer-solutions-x1.jpg 1x,
+                  ./images/studio-page/work/designer-solutions-x2.jpg 2x">
+
+                  <img 
+                    src="./images/studio-page/work/designer-solutions-x1.jpg" 
+                    alt="design" 
+                    width="370" 
+                    height="294" 
+                  />
+                </picture>
                 <p class="work__text">
                   ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
                 </p>
@@ -384,10 +423,16 @@
                 media="(min-width: 1200px)"
               >
 
-              <source srcset="./images/studio-page/team/desktop/nikolai-tarasov-tablet-x1-min.jpg 1x,
-                  ./images/studio-page/team/desktop/nikolai-tarasov-tablet-x2-min.jpg 2x" 
+              <source
+               srcset="./images/studio-page/team/tablet/nikolai-tarasov-tablet-x1-min.jpg 1x,
+                  ./images/studio-page/team/tablet/nikolai-tarasov-tablet-x2-min.jpg 2x" 
                    media="(min-width: 768px)"
                   >
+
+              <source 
+                srcset="./images/studio-page/team/mobile/nikolai-tarasov-mobile-x1-min.jpg 1x,
+                        ./images/studio-page/team/mobile/nikolai-tarasov-mobile-x2-min.jpg 2x"
+                 media="(min-width: 480px)">
 
               <img 
                 src="./images/studio-page/team/mobile/nikolai-tarasov-mobile-x1-min.jpg" 
@@ -436,7 +481,32 @@
           </li>
       
           <li class="team__item">
-            <img src="./images/Mikhail-Ermakov.jpg" class="team__image" alt="Mikhail Ermakov" />
+            <picture>
+
+              <source
+                srcset="./images/studio-page/team/desktop/mikhail-ermakov-desktop-x1-min.jpg 1x,
+                ./images/studio-page/team/desktop/mikhail-ermakov-desktop-x2-min.jpg 2x,"
+                media="(min-width: 1200px)"
+              >
+
+              <source 
+                srcset="./images/studio-page/team/tablet/mikhail-ermakov-tablet-x1-min.jpg 1x,
+                        ./images/studio-page/team/tablet/mikhail-ermakov-tablet-x2-min.jpg 2x," 
+                media="(min-width: 768px)"
+              >
+
+              <source 
+                srcset="./images/studio-page/team/mobile/mikhail-ermakov-mobile-x1-min.jpg 1x,
+                        ./images/studio-page/team/mobile/mikhail-ermakov-mobile-x2-min.jpg 2x,"
+                media="(min-width: 480px)"
+                >
+
+              <img 
+                src="./images/studio-page/team/mobile/mikhail-ermakov-mobile-x1-min.jpg" 
+                class="team__image" 
+                alt="Mikhail Ermakov" 
+              />
+            </picture>
             <div class="team__text">
               <h3 class="team__subtitle">Михаил Ермаков</h3>
               <p class="team__roles">UI Designer</p>
