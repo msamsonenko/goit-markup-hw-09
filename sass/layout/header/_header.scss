@@ -1,8 +1,18 @@
 /* site header */
 .page-hd {
-    border-bottom: 1px solid #ececec;
-    &__container {
-        display: flex;
-      }
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
   }
-  
+}
+
+.nav-contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
